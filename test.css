@@ -1,0 +1,277 @@
+header {
+    background-color: rgba(219, 199, 15, 0.904);
+    padding:0.5px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+ }
+  
+  p { 
+    font-size: 25px;
+    line-height: 24px;
+    letter-spacing: 3px;
+  }
+
+  
+
+  
+  .t1{
+    background-color:rgb(248, 242, 151);
+      float: left;
+      width: 1000px;
+      height: 420px;
+      position: absolute;
+      top: 25%;
+   }
+   .t1_left{
+    background-color:rgb(206, 248, 190);
+      float: left;
+      width: 450px;
+      height: 420px;
+      position: absolute;
+      top: 25%;
+      left:70%;
+      text-align:right;
+      line-height:750px;
+   }
+   input{border:0;
+    background-color:rgb(248, 242, 151);
+    color:gray;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:25px;
+  }
+  
+  input:hover{
+    color:#00752d;
+    background-color:#fff;
+    border:2px #00752d solid;
+  }
+  .t2{
+    float: left;
+    width: 1500px;
+    height:100;
+    position: absolute;
+    top: 90%;
+    
+  } 
+  
+  .c1{
+    float: left;
+    padding: 20px;
+    width:300;
+    height: 400px;
+    left:900px;
+  }
+  .name {
+    color: rgb(243, 166, 0);
+    font-weight: 900;
+    font-size:1cm;
+  }
+   .imgabout_a {
+    float: left;
+    width: 400px;
+    border: 2px dashed  rgba(219, 199, 15, 0.904);
+    border-radius: 50%;
+    overflow: hidden;
+    transition: box-shadow 500ms;
+}
+/*大頭貼*/
+.imgabout {
+    transition: transform 1s ease;
+    width: 100%;
+    height: 100%;
+}
+.imgabout_a:hover {
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.8);
+}
+  .FB{
+    width: 20px;
+    height:20px;
+  }
+  /*標題格式*/
+  
+  .img_title{
+    transition: opacity 1s ease;
+    width: 450px;
+    height: 80px;
+}
+
+.img_a:hover .img_title, .img_a:focus .img_title {
+    opacity: 0.4;
+}
+
+  /*專業技能*/
+  .listSkill {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .listSkill li {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: rgb(124, 82, 3);
+    font-weight: 800;
+    font-size:25px;
+  }
+  
+  .circle {
+    width: 150px;
+    height: 150px;
+    background-color: #b9f393;
+    border-radius: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    margin-top: 20px;
+  }
+  .circle:after {
+    content: "";
+    display: block;
+    background-color: #f0cf74;
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  
+  .p90, .p180, .p270 ,.p360 {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    background-color:#b9f393;
+  }
+  
+  .p180 {
+    top: 50%;
+  }
+  
+  .p270 {
+    left: 0;
+    top: 50%;
+  }
+  
+  .p360 {
+    left: 0;
+    top: 0;
+  }
+  
+  /*能量條*/
+  .listProgram {
+    width: 70%;
+    margin: auto;
+
+  }
+  
+  .listProgram .bar {
+    width: 800px;
+    height: 10px;
+    border: 4px solid  #f0cf74;
+    border-radius: 5px;
+   
+  }
+  
+  .listProgram li {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    color:  rgb(124, 82, 3);
+    font-weight: 600;
+     font-size:25px;
+  }
+  
+  .value {
+    width: 100%;
+    height: 100%;
+    background-color: #b9f393;
+    
+  }
+  
+  .p60 {
+    width: 60%;
+  }
+  
+  .p80 {
+    width: 80%;
+  }
+  
+  .p70 {
+    width: 70%;
+  }
+  
+  .p90 {
+    width: 90%;
+  }
+  
+  .p100 {
+    width: 100%;
+  }
+  @keyframes bar1 {
+    from { border-right-width: 0px; }
+    to { border-right-width: 150px; }
+ }
+@keyframes bar2 {
+    from {  border-right-width: 0px;}
+    to { border-right-width: 100px; }
+ }
+@keyframes bar3 {
+    from { border-right-width: 0px; }
+    to { border-right-width: 50px; }
+}
+
+  /*活動照片*/
+  .middle {
+    position: relative;
+    padding: 40px 0px;
+    background-color: white;
+    margin-top: 0px;
+   
+  }
+
+  .middle .activitys {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    animation: myfirst 5s linear 5s infinite alternate;
+  }
+  .middle .activitys hr {
+    border: solid 1px #e0e0e0;
+  }
+  .middle .activitys .activity {
+    background-color: white;
+    height: 250px;
+    color:  rgb(124, 82, 3);
+    text-align: center;
+    width: 250px;
+    padding: 30px 20px 10px 20px;
+    box-shadow: 0px 2px 20px #e0e0e0;
+  }
+  .middle .activitys .activity img {
+    width: 100%;
+  }
+  .middle .activitys .activity2 {
+    margin-top: 40px;
+  }
+  .middle .activitys .activity3 {
+    margin-top: 60px;
+  }
+
+  @keyframes myfirst {
+    0%   {left:0px; top:0px;}
+    50%  {left:0px; top:50px;}
+    100% {left:0px; top:0px;}
+  }
+  
